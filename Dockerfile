@@ -8,17 +8,17 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
-    libzip -dev \
+    libzip-dev \
     libsodium-dev \
     libpq-dev \
     default-mysql-client \
     libfreetype6-dev \
     libjpeg62-turbo-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install- pdo_pgsql pdo_mysql mbstring exif pcntl bcmath gd zip sodium
+    && docker-php-ext-install pdo_pgsql pdo_mysql mbstring exif pcntl bcmath gd zip sodium
 
 #get composer
-copy --from=composer:latest /usr/bin/composer /usr/bin/composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 RUN curl -sl https://deb.nodesource.com/setup_18.x | bash && \
     apt-get update && apt-get install -y nodejs

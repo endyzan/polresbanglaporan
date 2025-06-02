@@ -79,7 +79,7 @@ class HomeController extends Controller
 
     public function satSabahara()
     {
-        return view('sat_sabahara');
+        return view('sat_sabhara');
     }
 
     public function satTahti()

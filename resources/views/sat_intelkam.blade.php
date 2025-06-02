@@ -9,9 +9,9 @@
     <div class="header-user">
         <h1>SATUAN INTELKAM</h1>
     </div>
-    axyraxeichyl
     <div class="content-user-gabung">
-        <img src="{{ asset(assets/img/user/satintelkam/logo.png" alt="">
+        <img src="{{ asset('assets/img/user/satintelkam/logo.png') }}" alt="">
+
         <div class="divider"></div>
             <div class="text-user">
             <p>Sat Intelkam adalah unsur pelaksana utama Polres yang berada di bawah Kapolres.</p>
